@@ -1,5 +1,4 @@
 /* Global CSS for IOS Calculator */
-
 /* Set the body background color and center the calculator container */
     body {
         margin: 0px;
@@ -10,10 +9,11 @@
         align-items: center;
         background-color: black;
     }
+
 /* Style the calculator container */
     .container {
         background: black;
-        max-width: 460px;
+        width: 460px;
         text-align: right;
         border-radius: 10px;
         padding: 20px;
@@ -56,7 +56,53 @@
         color: #000;
         transition: background-color 0.2s, color 0.2s;
     }
+
     button:hover {
         background-color: #d0d0d0;
         color: #000;
+    }
+
+/* Style the operator buttons */
+    .equals-button,
+    .operator-button {
+        background-color: #ff9800;
+        font-size: 30px;
+    }
+
+    .equals-button:hover,
+    .operator-button:hover {
+        background-color: #ff8c00;
+    }
+
+/* Style the rectangular button */
+    .rectangular-button {
+        border-radius: 35px;
+    }
+
+/* Style the double-wide button */
+    .double-wide-button {
+        grid-column: span 2;
+        text-align: left; /*for now */
+    }
+
+    .equals-button {
+        font-size: 30px;
+    }
+    
+/* Style the clear, toggle-sign, and percentage buttons */
+    button[data-action="clear"],
+    button[data-action="toggle-sign"],
+    button[data-action="percentage"] {
+        background-color: #9f9f9f;
+        font-size: 30px;
+    }
+
+/* Style the number buttons */
+    button[data-action="number"] {
+        background-color: #313131;
+        font-size: 30px;
+    }
+
+    button[data-action="number"]:hover {
+        background-color: #313131;
     }

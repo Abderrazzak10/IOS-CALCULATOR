@@ -12,42 +12,42 @@
     <!-- Add the calculator container -->
     <div class="container">
         <!-- Add the output display -->
-        <div class="output">
+        <div class="output" id="output">
             <span>0</span>
         </div>
 
         <!-- Add the buttons container -->
         <div class="buttons">
             <!-- Add the clear button -->
-            <button>AC</button>
+            <button data-action="clear">AC</button>
 
             <!-- Add the toggle-sign button -->
-            <button>+/-</button>
+            <button data-action="toggle-sign">+/-</button>
 
             <!-- Add the percentage button -->
-            <button>%</button>
+            <button data-action="percentage">%</button>
 
             <!-- Add the divide operator button -->
-            <button>÷</button>
+            <button data-action="divide" class="operator-button">÷</button>
 
             <!-- Add the number buttons -->
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
+            <button data-action="number">7</button>
+            <button data-action="number">8</button>
+            <button data-action="number">9</button>
+            <button class="operator-button" data-action="multiply">x</button>
+            <button data-action="number">4</button>
+            <button data-action="number">5</button>
+            <button data-action="number">6</button>
+            <button class="operator-button" data-action="subtract">-</button>
+            <button data-action="number">1</button>
+            <button data-action="number">2</button>
+            <button data-action="number">3</button>
+            <button class="operator-button" data-action="add">+</button>
+            <button class="double-wide-button rectangular-button" data-action="number">0</button>
+            <button data-action="number">.</button>
 
             <!-- Add the equals button -->
-            <button>=</button>
+            <button class="equals-button" data-action="calculate">=</button>
         </div>
     </div>
 </body>
