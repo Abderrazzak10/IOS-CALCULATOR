@@ -19,10 +19,10 @@
         <!-- Add the buttons container -->
         <div class="buttons">
             <!-- Add the clear button -->
-            <button data-action="clear">AC</button>
+            <button onclick="clearOutput()" data-action="clear">AC</button>
 
             <!-- Add the toggle-sign button -->
-            <button data-action="toggle-sign">+/-</button>
+            <button onclick="toggleSign()" data-action="toggle-sign">+/-</button>
 
             <!-- Add the percentage button -->
             <button data-action="percentage">%</button>
@@ -34,21 +34,24 @@
             <button data-action="number">7</button>
             <button data-action="number">8</button>
             <button data-action="number">9</button>
-            <button class="operator-button" data-action="multiply">x</button>
+            <button class="operator-button">x</button>
             <button data-action="number">4</button>
             <button data-action="number">5</button>
             <button data-action="number">6</button>
-            <button class="operator-button" data-action="subtract">-</button>
+            <button class="operator-button">-</button>
             <button data-action="number">1</button>
             <button data-action="number">2</button>
             <button data-action="number">3</button>
-            <button class="operator-button" data-action="add">+</button>
+            <button class="operator-button">+</button>
             <button class="double-wide-button rectangular-button" data-action="number">0</button>
             <button data-action="number">.</button>
 
             <!-- Add the equals button -->
-            <button class="equals-button" data-action="calculate">=</button>
+            <button onclick="calculate()" class="equals-button">=</button>
         </div>
     </div>
+
+    <!-- Add the JavaScript file for the calculator functionality -->
+    <script src="js/script.js"></script>
 </body>
 </html>
