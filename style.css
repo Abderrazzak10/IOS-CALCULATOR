@@ -53,7 +53,7 @@
         border: none;
         cursor: pointer;
         font-size: 12px;
-        color: #000;
+        color: #fff;
         transition: background-color 0.2s, color 0.2s;
     }
 
@@ -94,6 +94,7 @@
     button[data-action="toggle-sign"],
     button[data-action="percentage"] {
         background-color: #9f9f9f;
+        color: #000;
         font-size: 30px;
     }
 

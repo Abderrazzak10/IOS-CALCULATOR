@@ -25,26 +25,26 @@
             <button onclick="toggleSign()" data-action="toggle-sign">+/-</button>
 
             <!-- Add the percentage button -->
-            <button data-action="percentage">%</button>
+            <button onclick="appendToOutput('%')" data-action="percentage">%</button>
 
             <!-- Add the divide operator button -->
-            <button data-action="divide" class="operator-button">÷</button>
+            <button onclick="appendToOutput('/')" data-action="divide" class="operator-button">÷</button>
 
             <!-- Add the number buttons -->
-            <button data-action="number">7</button>
-            <button data-action="number">8</button>
-            <button data-action="number">9</button>
-            <button class="operator-button">x</button>
-            <button data-action="number">4</button>
-            <button data-action="number">5</button>
-            <button data-action="number">6</button>
-            <button class="operator-button">-</button>
-            <button data-action="number">1</button>
-            <button data-action="number">2</button>
-            <button data-action="number">3</button>
-            <button class="operator-button">+</button>
-            <button class="double-wide-button rectangular-button" data-action="number">0</button>
-            <button data-action="number">.</button>
+            <button onclick="appendToOutput('7')" data-action="number">7</button>
+            <button onclick="appendToOutput('8')" data-action="number">8</button>
+            <button onclick="appendToOutput('9')" data-action="number">9</button>
+            <button onclick="appendToOutput('*')" class="operator-button">x</button>
+            <button onclick="appendToOutput('4')" data-action="number">4</button>
+            <button onclick="appendToOutput('5')" data-action="number">5</button>
+            <button onclick="appendToOutput('6')" data-action="number">6</button>
+            <button onclick="appendToOutput('-')" class="operator-button">-</button>
+            <button onclick="appendToOutput('1')" data-action="number">1</button>
+            <button onclick="appendToOutput('2')" data-action="number">2</button>
+            <button onclick="appendToOutput('3')" data-action="number">3</button>
+            <button onclick="appendToOutput('+')" class="operator-button">+</button>
+            <button onclick="appendToOutput('0')" class="double-wide-button rectangular-button" data-action="number">0</button>
+            <button onclick="appendToOutput('.')" data-action="number">.</button>
 
             <!-- Add the equals button -->
             <button onclick="calculate()" class="equals-button">=</button>
