@@ -13,11 +13,14 @@ IOS-CALCULATOR is a simple and intuitive calculator application designed for iOS
     ```bash
     git clone https://github.com/Abderrazzak10/IOS-CALCULATOR.git
     ```
-a3. Build and run the application on your iOS device or simulator.
+2. Build and run the application on your iOS device or simulator.
 
 ## Usage
 1. Launch the IOS-CALCULATOR app.
 2. Use the on-screen buttons to perform calculations.
+
+## Screenshot
+![IOS-CALCULATOR Screenshot](image.png)
 
 ## License
 This project is licensed under the MIT License.
